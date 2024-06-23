@@ -5,7 +5,7 @@ spring:
     #container
     #url: jdbc:mysql://db:3306/clientes_db?useTimezone=true&serverTimezone=UTC&createDatabaseIfNotExist=true
     username: root
-    password: Ad33m!!r
+    password:
 
   jpa:
     hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
@@ -16,3 +16,12 @@ spring:
 
   jackson:
     default-property-inclusion: NON_NULL
+
+jwt:
+  secret: 840e774c992fcf952108170fb024b122d7d7cfabcf910a7c2043a24c4a96b590
+    #duracao em minutos
+  expiration: 30
+
+server:
+  error:
+    include-message: always
